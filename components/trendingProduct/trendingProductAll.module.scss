@@ -1,0 +1,24 @@
+@import '../../styles/globals.scss';
+
+
+.trendProductAll{
+    margin-top: 50px;
+    margin-bottom: 40px;
+    .trendingHead{
+        margin-bottom: 70px;
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            @include responsive(768px){
+                font-size: 13px;
+            }
+        }
+    }
+}

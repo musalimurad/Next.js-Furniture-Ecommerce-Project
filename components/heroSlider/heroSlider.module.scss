@@ -1,0 +1,115 @@
+@import '../../styles/globals.scss';
+
+
+
+
+.heroSliderAllContent {
+    width: 100%;
+    // @include responsive(768px){
+    //     height: 160px;
+    // }
+    // @include responsive(576px){
+    //     height: 200px;
+    // }
+    margin-top: 80px;
+}
+
+.swiper-slide {
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: relative;
+}
+.swiper-wrapper{
+    position: relative !important;
+}
+
+// .heroSliderImg{
+//     width: 100% !important;
+//     height: 620px !important;
+//     object-fit: cover !important;
+// }
+
+.slideImgContent {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    @include responsive(768px){
+        display: none;
+    }
+    p{
+        color: #2c2b2b;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .priceContent {
+        margin-top: 40px;
+        h3 {
+            position: relative;
+            font-weight: 600;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                top: 0px;
+                left: 0;
+                background-color: #777777;
+                display: inline-block;
+            }
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background-color: #777777;
+                bottom: 0px;
+                left: 0;
+            }
+            span{
+                color: #2c2b2b;
+                font-weight: 400;
+            }
+        }
+
+    }
+}
+
+.overlayHero{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(204, 204, 204, 0.26);
+}
+
+.swiper-pagination-bullet-active{
+    color: red !important;
+    background-color: red !important;
+    width: 15px !important;
+    height: 15px !important;
+    transition: .5s ease !important;
+}
+.swiper-pagination-bullet{
+    background-color: red !important;
+    z-index: 5 !important;
+    width: 10px !important;
+    height: 10px !important;
+}

@@ -1,0 +1,30 @@
+@import '../../styles/globals.scss';
+
+
+.ChairCollection{
+    .chairCollectionContent{
+        position: relative;
+        .chairText{
+            position: absolute;
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%,-25%);
+            text-align: center;
+            @include responsive(768px){
+                h2{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
+            .chairDesc{
+                width: 55%;
+                margin: auto;
+                @include responsive(992px){
+                    display: none;
+                }
+            }
+        }
+    }
+}

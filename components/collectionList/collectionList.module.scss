@@ -1,0 +1,36 @@
+@import '../../styles/globals.scss';
+
+
+
+.collectionList{
+    margin-bottom: 20px;
+    transition: .5s ease;
+   
+    .collectionCart{
+        position: relative;
+        &:hover{
+            .collectionCartImg{
+                transform: scale(1.2);
+            }
+            .cartImgText{
+               h2{
+                color: $headerBeforeBg;
+               }
+            }
+        }
+        .collectionCartImg{
+            transition: .7s ease;
+            cursor: pointer;
+           
+        }
+        .cartImgText{
+            
+            position: absolute;
+            bottom: 6%;
+            h2{
+                transition: .7s ease;
+            }
+        }
+    }
+   
+}
